@@ -9,5 +9,13 @@ x=1:10
 x
 x2 = c(3,5,2,1)
 x4 = seq(5,60, by=6.334)
+ Customer <- read.csv("C:/Users/plewk/Desktop/Customer.csv")
+ View(Customer)
+ 
+```
 
+```{r}
+y = table(Customer$Region)
+
+barplot(y[c(2,4,3,1)])
 ```
